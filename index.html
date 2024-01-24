@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,15 @@
       background-size: cover;
       font-family: 'Arial', sans-serif;
       text-align: center;
-      overflow: hidden; /* Hide overflow to prevent scrolling */
+      overflow: hidden;
+      /* Hide overflow to prevent scrolling */
     }
 
     #poster {
-      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-      color: #ffffff; /* Light text color */
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Semi-transparent black background */
+      color: #ffffff;
+      /* Light text color */
       padding: 20px;
       border-radius: 10px;
       position: absolute;
@@ -29,7 +33,8 @@
 
     h1 {
       font-size: 36px;
-      color: #ffd700; /* Gold text color */
+      color: #ffd700;
+      /* Gold text color */
       margin-bottom: 20px;
       animation: blink 1s infinite alternate, emboss 1s infinite alternate;
     }
@@ -40,23 +45,37 @@
     }
 
     @keyframes blink {
-      from { opacity: 1; }
-      to { opacity: 0.5; }
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0.5;
+      }
     }
 
     @keyframes emboss {
-      from { text-shadow: 2px 2px 2px #333; }
-      to { text-shadow: -2px -2px 2px #333; }
+      from {
+        text-shadow: 2px 2px 2px #333;
+      }
+
+      to {
+        text-shadow: -2px -2px 2px #333;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <div id="poster">
+    <!-- <audio loop autoplay="autoplay"  src="silent-wood.mp3" type="audio/mp3"></audio> -->
+    <embed name="GoodEnough" src="silent-wood.mp3" loop="false" hidden="true" autostart="true">
     <img src="new_year_gif.gif" alt="New Year GIF" style="width: 100%; max-width: 500px; margin-top: 20px;">
     <!-- <h1>Happy New Year</h1> -->
     <p>Wishing you a Joyous New Year filled with warmth and happiness!</p>
     <p><strong style="color: #ff6347;">Rohan Bhavsar</strong></p>
-    
   </div>
 </body>
+
 </html>
